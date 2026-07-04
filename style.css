@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #80C0FF;
+
+    display: flex;
+    flex-direction: column;
+}
+#title{
+    font-family:"TItan One",sans-serif;
+    font-size: clamp(2rem, 5vw, 50px);
+    color:#6478ff;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    text-align:center;
+    margin-bottom:8.99vh
+}
+#waves {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width:100%;
+    margin-bottom:50px;
+}
+
+
+#wavy {
+    /* position: absolute; */
+    bottom: 0;
+    right: 0;
+width:100%;
+}
+#waves svg{
+    width: 100%;
+    display: block;
+    /* height:13.44vh; */
+}
+#wavy svg {
+    width: 100%;
+    display: block;
+    /* height:4.51vh; */
+}
+main{
+    flex:1;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   flex-direction:column;
+}
+.goto{
+       display:flex;
+  flex-direction:column;
+  gap:68px;
+}
+button{
+    background-color: #c0c0c0;
+    color:#cb5000;
+     font-family:"TItan One",sans-serif;
+    font-size:clamp(16px,5vw,20px);
+    text-align:center;
+    border-radius:25px;
+    padding:10px 10px;
+    border:none;
+}
+#htp{
+    display:none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color:#FFFFFF;
+    padding:20px;
+    border-radius:20px;
+}
+#popup{
+    white-space:pre-wrap;
+    font-family: "Tiro Tamil", serif;
+    font-size: large;
+}
+#htp #closehowtoplay{
+     position: absolute;   
+    top:-20px;
+    right:-20px;
+    cursor: pointer;
+    background-color:red;
+    color:white;
+}
+#closeSettings{
+     position: absolute;   
+    top:-20px;
+    right:-20px;
+    cursor: pointer;
+    background-color:red;
+    color:white;
+}
+.setting-row{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px;
+     color:white;
+}
+.settings h1{
+    align-items:center;
+
+}
+#settings_container{
+    display:flex;
+    flex-direction:column;
+    position:fixed;
+    gap:48px;
+    background-color:#d9d9d9;
+     height:auto;
+   width:320px;
+     padding:0 15px;
+     font-family:"TItan One",sans-serif;
+     font-size:30px;
+    display:none;
+    border-radius:30px;
+}
+.setting-row h1{
+    font-size:50px;
+    color:brown;
+}
+.switch{
+    position:relative;
+    width:60px;
+    height:34px;
+    cursor:pointer;
+}
+.switch input{
+    display:none;
+}
+.slider{
+    position:absolute;
+    inset:0;
+    background:#ccc;
+    cursor:pointer;
+    border-radius:34px;
+    transition:.3s;
+}
+.slider::before{
+    content:"";
+      position:absolute;
+    width:26px;
+    height:26px;
+    left:4px;
+    bottom:4px;
+    background:white;
+    border-radius:50%;
+    transition:.3s;
+}
+input:checked + .slider{
+    background:#4CAF50;
+}
+input:checked + .slider::before{
+    transform:translateX(26px);
+}
+.sliding::before{
+    content:"";
+    position:absolute;
+    width:26px;
+    height:26px;
+    left:4px;
+    bottom:4px;
+    background:white;
+    border-radius:50%;
+    transition:.3s;
+}
+input:checked +.sliding::before{
+    transform:translateX(26px);
+}
+input:checked +.sliding{
+     background:#4CAF50;
+}
+#how_to_play:active{
+    filter: brightness(0.8);
+}
+#setting:active{
+    filter: brightness(0.8);
+}
+#play:active{
+    filter: brightness(0.8);
+}
+#closehowtoplay:active{
+    filter: brightness(0.8);
+}
+#closeSettings:active{
+    filter: brightness(0.8);
+}

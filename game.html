@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actual game</title>
+    <link rel="stylesheet" href="styleact.css">
+   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="pause">
+     <img src="Vector.svg"> 
+    </div>
+    <div class="inputs">
+        <div id="player">
+            <h2>Player</h4>
+            <div id="circle">
+                <img id="playerImg" alt="">
+            </div>
+            
+        </div>
+        <h1 id="vs">vS</h1>
+        <div id="Computer">
+            <h2>Computer</h4>
+            <div id="circle_">
+                <img id="computerImg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="playing">
+        <div id="result">
+            <p id="resultContent"></p>
+            <div id="buts">
+            <button id="try">Play Again</button>
+            <button id="mainmenu">Main menu</button></div>
+        </div>
+        <div id="menu">
+            <h1>PAUSED</h1><div id="butty">
+            <button id="resume">Resume</button>
+            <button id="restart">Restart</button>
+            <button id="forfeit">Forfeit</button></div>
+
+        </div>
+    <div id="scissors" class="choice" data-choice="scissor">
+        <img src="scissors.svg">
+    </div>
+
+    <div id="rocks" class="choice" data-choice="rock">
+        <img src="fist.svg">
+    </div>
+
+    <div id="papers" class="choice" data-choice="paper">
+        <img src="paper.svg">
+    </div>
+</div>
+<script src="game.js
+"></script>
+</body>
+</html>
