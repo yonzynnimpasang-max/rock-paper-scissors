@@ -25,7 +25,7 @@ restart.addEventListener("click",()=>{
     location.reload();
 });
 forfeit.addEventListener("click",()=>{
-    window.location.href="home.html";
+    window.location.href="index.html";
 });
 pause.addEventListener("click",function(){
     menu.style.display="block";
@@ -36,7 +36,7 @@ tryagain.addEventListener("click",function(){
       location.reload();
 });
 mainmenu.addEventListener("click",function(){
-      window.location.href="home.html";
+      window.location.href="index.html";
 });
 
 function getImage(choice){
